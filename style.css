@@ -1,0 +1,61 @@
+.buttons{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#images1{
+    float: left;
+    padding: 5px;
+    
+}
+
+#images2{
+    float: left;
+    padding: 5px;
+}
+
+#images3{
+    float: left;
+    padding: 5px;
+}
+
+#images4{
+    float: left;
+    padding: 5px;
+}
+
+#images5{
+    float: left;
+    padding: 5px;
+}
+
+#images6{
+    float: left;
+    padding: 5px;
+}
+
+#images7{
+    float: left;
+    padding: 5px;
+}
+
+#images8{
+    float: left;
+    padding: 5px;
+}
+
+#images9{
+    float: left;
+    padding: 5px;
+}
+
+#images10{
+    float: left;
+    padding: 5px;
+}
