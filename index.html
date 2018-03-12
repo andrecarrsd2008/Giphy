@@ -1,105 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Document</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Document</title>
 </head>
+<style>
+        .button {
+                background-color: #aabeb1;
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-align: center;
+                font-size: 16px;
+                margin: 5px 5px;
+                opacity: 0.6;
+                transition: 0.3s;
+                display: inline-block;
+                text-decoration: none;
+                cursor: pointer;
+                box-shadow: 0 0 0 9px #999;
+
+        }
+</style>
+
 <body>
-  <div class="wrapper">
-                <div class="buttons">
-                        <button class="button">Button</button>
-                        <button type="button">San Francisco</button>
-                        <button type="button">Los Angeles</button>
-                </div>  
-                <form>
-                Search:<br>
-                <input type="text" name="label"><br> 
-                
-                <div id="results">
-                 
-                 <div id="images1">
-                 images
-                 <p>Rated G</p>
-                 <img src="images/image1.jpg" width="350px" height="250px">
-                 </div>
-                
-                 <div id="images2">
-                 images
-                 <p>Rated G</p>
-                 <img src="images/image1.jpg" width="350px" height="250px">
-                 </div>
-                
-                 <div id="images3">
-                  images
-                  <p>Rated G</p>
-                 <img src="images/image1.jpg" width="350px" height="250px">
-                 </div>
-                                               
-                 <div id="images4">
-                 images
-                 <p>Rated G</p>
-                 <img src="images/image1.jpg" width="350px" height="250px">
-                 </div>
+        <div class="wrapper">
+                <div class="buttons"></div>
+                <form action="" class="pic1">
 
-                 <div id="images5">
-                 images
-                 <p>Rated G</p>
-                 <img src="images/image1.jpg" width="350px" height="250px">
-                 </div>
-                               
-                 <div id="images6">
-                 images
-                 <p>Rated G</p>
-                 <img src="images/image1.jpg" width="350px" height="250px">
-                 </div>
+                        <label for="">Search for gif here:</label>
+                        <input type="text" id="searchVal">
+                        <button id="submit">Submit</button>
+                </form>
 
-                 
-                 <div id="images7">
-                 images
-                 <p>Rated G</p>
-                 <img src="images/image1.jpg" width="350px" height="250px">
-                 </div>
-                                             
-                 <div id="images8">
-                 images
-                 <p>Rated G</p>
-                 <img src="images/image1.jpg" width="350px" height="250px">
-                 </div>
-                             
-                 <div id="images9">
-                 images
-                 <p>Rated G</p>
-                 <img src="images/image1.jpg" width="350px" height="250px">
-                 </div>
-                
-                                             
-                 <div id="images10">
-                 images
-                 <p>Rated G</p>
-                 <img src="images/image1.jpg" width="350px" height="250px">
-                 </div>
-       
+                <div id="results"></div>
+        </div>
 
-       
-  </div>          
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript">
-             // Event listener for our cat-button
-            $("#cat-button").on("click", function() {
-    var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=cats";
-
-     // Perfoming an AJAX GET request to our queryURL
-     $.ajax({
-        url: queryURL,
-        method: "GET"
-      })
-
-       // After the data from the AJAX request comes back
-       .then(function(response) {
-
-    </script>       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="app.js"></script>
 </body>
+
 </html>
